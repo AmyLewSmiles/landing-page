@@ -106,6 +106,8 @@ button{
     font-size: 36px;
     color: var(--common-color3);
     font-weight: 900;
+    width: 100%;
+    justify-content: center;
 }
 
 .mini {
