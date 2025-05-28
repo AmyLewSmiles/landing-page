@@ -7,25 +7,25 @@
 body *{
     font-family: Roboto, sans-serif;
     display: flex;
-    max-width: 1500px;
+    flex-wrap: wrap;
 }
 .nav, .hero {
     background-color: var(--common-color3);
-    width: 100%;
-}
-.clearfix::after {
-    content: "";
-    clear: both;
     display: flex;
 }
-
+section {
+    flex-direction: column;
+}
 /*Navigation Menu */
 
+header{
+    font-size: small;
+}
 .nav{
-    height: 30px;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
+    flex-direction: row;
 }
 .logo{
     width: 5%;
@@ -33,7 +33,15 @@ body *{
 a {
     color: var(--common-color2);
 }
-li{
+.nav div{
+    display: block;
+    flex-direction: column;
+}
+.nav ul{
+    display: flex;
+    flex-direction:row;
+}
+.nav li{
     list-style:none;
     padding: 1em;
 }
@@ -41,27 +49,32 @@ li{
 
 /* Top Section */
 .hero{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 90px;
 }
+
 .container{
-    display: flex;
-    flex-direction: column;
-    width: 55%;
+    width: 45%;
     align-items: center;
+    justify-content: center;
+}
+
+.hero div{
+    align-items: center;
+    justify-content: center;
 }
 h1 {
-   font-size: 48px;
-   font-weight: 900;
-   color: var(--common-color1);
-   text-align: right;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--common-color1);
+    text-align: right;
 }
 .hero p{
     color:var(--common-color2);
     font-size: 18px;
     text-align: right;
+
 }
 
 button{
@@ -70,8 +83,10 @@ button{
     border-radius: 5px;
     padding: .25rem 1.25rem;
     font-weight: 600;
-    width: 130px;;
-    align-items: center;;
+    width: 140px;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
 .picture-one{
@@ -84,9 +99,82 @@ button{
 .two{
     background-color: var(--common-color1);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+}
+.two h2{
+    font-size: 36px;
+    color: var(--common-color3);
+    font-weight: 900;
+}
+
+.mini {
+    flex-direction: column;
+
+}
+.mini p{
+    width: 140px;
+    padding: 0 5px;
+    text-align: center;
 }
 .mini img{
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    padding: 25px;
 }
+.description{
+    font-size: 12px;
+}
+
+/*Section three */
+.three{
+    background-color: var(--common-color2);
+    width: 100%;
+    padding: 90px 200px;
+    align-items: center;
+
+}
+.quotebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+.quote {
+    font-size: 36px;
+    font-weight: 280;
+    font-style: italic;
+    text-align: justify;
+    color: #1f2937;
+}
+.author{
+    font-size: 26px;
+    align-self: flex-end;   
+}
+
+/*Section Four*/
+.four {
+    background-color:white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+}
+.cta{
+    color: var(--common-color1);
+    background-color: var(--common-color4);
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.cta-text{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
