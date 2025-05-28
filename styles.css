@@ -1,0 +1,52 @@
+:root {
+    --common-color1:#F9FaF8;
+    --common-color2:#E5e7eb;
+    --common-color3:#1f2937;
+    --common-color4:#3882f6;
+
+}
+body *{
+   font-family: Roboto, sans-serif;
+    margin:0;
+}
+.nav,
+.hero {
+    background-color: var(--common-color3);
+}
+nav{
+    margin:0;
+    width: 100%;
+    display: inline-block;
+}
+.hero{
+    Padding: 2rem 0;
+}
+h1 {
+   font-size: 48px;
+   font-weight: 900;
+   color: var(--common-color1);
+}
+.hero p{
+    color:var(--common-color2);
+    font-size: 18px;
+}
+.logo{
+    width: 5%;
+}
+
+a {
+    color: var(--common-color2);
+}
+li{
+    list-style:none;
+    float: right;
+    padding: 0 5px 0 0;
+    margin: 5px;
+}
+button{
+    background-color:var(--common-color4);
+    color: var(--common-color2);
+    border-radius: 5px;
+    padding: .25rem 1.25rem;
+    font-weight: 600;
+}
